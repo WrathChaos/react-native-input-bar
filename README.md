@@ -14,7 +14,7 @@
 <img alt="React Native Input Bar"
         src="assets/Screenshots/example.png" width="49%" />
 <img alt="React Native Input Bar"
-        src="assets/Screenshots/example.gif" width="49%"  />
+        src="assets/Screenshots/RN-Input-Bar.gif" width="49%"  />
 </p>
 
 # Installation
