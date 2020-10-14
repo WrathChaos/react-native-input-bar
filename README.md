@@ -32,8 +32,7 @@ npm i @freakycoder/react-native-input-bar
 ```js
 "react-native-spinkit": ">= 1.5.0",
 "react-native-androw": ">= 0.0.34",
-"react-native-vector-icons": ">= 6.6.0",
-"react-native-dynamic-vector-icons": ">= 0.2.1"
+"@freakycoder/react-native-bounceable": "^0.2.0",
 ```
 
 ### Note: Do not for get to `pod install` for installing properly SpinKit
@@ -45,13 +44,13 @@ npm i @freakycoder/react-native-input-bar
 ## Import
 
 ```js
-import InputBar from "react-native-input-bar";
+import RNInputBar from "@freakycoder/react-native-input-bar";
 ```
 
 ## Usage
 
 ```jsx
-<InputBar />
+<RNInputBar />
 ```
 
 ## Auto-Grow InputBar Usage
@@ -59,43 +58,38 @@ import InputBar from "react-native-input-bar";
 All you need to do is set the `multiline` and set the `height` prop as `null`.
 
 ```jsx
-<InputBar multiline height={null} minHeight={50} />
+<RNInputBar multiline height={null} minHeight={50} />
 ```
 
 # Configuration - Props
 
-| Property             |     Type      |       Default       | Description                                                                                                  |
-| -------------------- | :-----------: | :-----------------: | ------------------------------------------------------------------------------------------------------------ |
-| width                | string/number | 90% of screen width | change the InputBar's width                                                                                  |
-| height               | string/number |         50          | change the InputBar's height                                                                                 |
-| bottom               | string/number |         24          | change the InputBar's bottom position                                                                        |
-| value                |    string     |      undefined      | set the TextInput's value                                                                                    |
-| onChangeText         |   function    |      undefined      | handle onChangeText function                                                                                 |
-| backgroundColor      |     color     |       #fdfdfd       | set your own color for InputBar's background color                                                           |
-| textColor            |     color     |       #9da1ab       | set your own color for TextInput's text color                                                                |
-| shadowColor          |     color     |       #757575       | set your own color for TextInput's shadow color                                                              |
-| placeholder          |    string     |  Type a message...  | change the TextInput's placeholder                                                                           |
-| textInputStyle       |     style     |       default       | set your own style for TextInput                                                                             |
-| disablePrimaryIcon   |    boolean    |        false        | disable the primary icon                                                                                     |
-| disableSecondaryIcon |    boolean    |        false        | disable the secondary icon                                                                                   |
-| primaryIconName      |    string     |        send         | change the primary icon's name                                                                               |
-| primaryIconType      |    string     |     FontAwesome     | change the primary icon's type                                                                               |
-| primaryIconColor     |    string     |       #9da1ab       | change the primary icon's color                                                                              |
-| primaryIconSize      |    number     |         21          | change the primary icon's size                                                                               |
-| primaryIconOnPress   |   function    |      undefined      | set a function when primary icon is on pressed                                                               |
-| secondaryIconName    |    string     |     attachment      | change the secondary icon's name                                                                             |
-| secondaryIconType    |    string     |       Entypo        | change the secondary icon's type                                                                             |
-| secondaryIconColor   |    string     |       #9da1ab       | change the secondary icon's color                                                                            |
-| secondaryIconSize    |    number     |         21          | change the secondary icon's size                                                                             |
-| secondaryIconOnPress |   function    |      undefined      | set a function when secondary icon is on pressed                                                             |
-| spinnerVisibility    |    boolean    |        false        | make the spinner visible instead of primarty icon                                                            |
-| spinnerType          |    string     |   FadingCircleAlt   | change the spinner type                                                                                      |
-| spinnerSize          |    number     |         20          | change the spinner number                                                                                    |
-| spinnerColor         |     color     |       #9da1ab       | change the spinner color                                                                                     |
-| spinnerStyle         |     style     |      undefined      | set your own style for spinner                                                                               |
-| multiline            |    boolean    |        false        | if you want **auto-grow** text `InputBar` then you need to use this prop & set the `height` prop to `null` ! |
-| minHeight            | string/number |         50          | change the minimum height of the `InputBar`                                                                  |
-| maxHeight            | string/number |        null         | change the maximum height of the `InputBar`                                                                  |
+| Property                 |     Type      |       Default       | Description                                                                                                    |
+| ------------------------ | :-----------: | :-----------------: | -------------------------------------------------------------------------------------------------------------- |
+| width                    | string/number | 90% of screen width | change the InputBar's width                                                                                    |
+| height                   | string/number |         50          | change the InputBar's height                                                                                   |
+| bottom                   | string/number |         24          | change the InputBar's bottom position                                                                          |
+| value                    |    string     |      undefined      | set the TextInput's value                                                                                      |
+| onChangeText             |   function    |      undefined      | handle onChangeText function                                                                                   |
+| backgroundColor          |     color     |       #fdfdfd       | set your own color for InputBar's background color                                                             |
+| textColor                |     color     |       #9da1ab       | set your own color for TextInput's text color                                                                  |
+| shadowColor              |     color     |       #757575       | set your own color for TextInput's shadow color                                                                |
+| placeholder              |    string     |  Type a message...  | change the TextInput's placeholder                                                                             |
+| textInputStyle           |     style     |       default       | set your own style for TextInput                                                                               |
+| disableSendIcon          |    boolean    |        false        | disable the send icon                                                                                          |
+| disableSecondaryIcon     |    boolean    |        false        | disable the secondary icon                                                                                     |
+| onSendPress              |   function    |      undefined      | set a function when send icon is on pressed                                                                    |
+| secondaryIconOnPress     |   function    |      undefined      | set a function when secondary icon is on pressed                                                               |
+| spinnerVisibility        |    boolean    |        false        | make the spinner visible instead of primarty icon                                                              |
+| spinnerType              |    string     |   FadingCircleAlt   | change the spinner type                                                                                        |
+| spinnerSize              |    number     |         20          | change the spinner number                                                                                      |
+| spinnerColor             |     color     |       #9da1ab       | change the spinner color                                                                                       |
+| spinnerStyle             |     style     |      undefined      | set your own style for spinner                                                                                 |
+| multiline                |    boolean    |        false        | if you want **auto-grow** text `RNInputBar` then you need to use this prop & set the `height` prop to `null` ! |
+| minHeight                | string/number |         50          | change the minimum height of the `RNInputBar`                                                                  |
+| maxHeight                | string/number |        null         | change the maximum height of the `RNInputBar`                                                                  |
+| borderRadius             |    number     |         12          | change the border radius of the `RNInputBar`                                                                   |
+| sendIconImageSource      |     image     |       default       | change the send icon image                                                                                     |
+| secondaryIconImageSource |     image     |       default       | change the secondary icon image default is attachment                                                          |
 
 
 ## Roadmap
@@ -103,6 +97,7 @@ All you need to do is set the `multiline` and set the `height` prop as `null`.
 - [x] ~~LICENSE~~
 - [x] ~~CHANGELOG~~
 - [x] ~~Auto-Grow Feature~~
+- [x] ~~TypeScript Challange~~
 - [ ] Optional Spinkit for secondary icon
 - [ ] Better Example
 
