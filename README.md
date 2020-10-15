@@ -4,8 +4,8 @@
 
 [![Fully customizable, beautifully designed Input Bar for React Native](https://img.shields.io/badge/-Fully%20customizable%2C%20beautifully%20designed%20Input%20Bar%20for%20React%20Native-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-input-bar)
 
-[![npm version](https://img.shields.io/npm/v/react-native-input-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-input-bar)
-[![npm](https://img.shields.io/npm/dt/react-native-input-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/react-native-input-bar)
+[![npm version](https://img.shields.io/npm/v/react-native-input-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-input-bar)
+[![npm](https://img.shields.io/npm/dt/react-native-input-bar.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-input-bar)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
